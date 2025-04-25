@@ -26,6 +26,9 @@ public class GestorEstudiantes {
                 mejor = estudiante;
             }
         }
+        if(mejor==null){
+            throw new NullPointerException("La lista de estudiantes está vacia.");
+        }
         return mejor; // Error si la lista está vacía
     }
 
